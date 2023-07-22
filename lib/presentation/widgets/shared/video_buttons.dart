@@ -40,7 +40,7 @@ class _CustomIconButton extends StatelessWidget {
       children: [
         IconButton(
           onPressed: (){}, 
-          icon: Icon(iconData, color: color, size: 30,)),
+          icon: Icon(iconData, color: color, size: 30)),
         Text('$value')
       ],
     );
