@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:tik_tok_video/config/helpers/humman_formats.dart';
 import 'package:tik_tok_video/domain/entities/video_post.dart';
@@ -19,7 +20,11 @@ class VideoButtons extends StatelessWidget {
         const SizedBox(height: 20),
         _CustomIconButton(value: video.likes, iconData: Icons.remove_red_eye_outlined),
         const SizedBox(height: 20),
-        const _CustomIconButton(value: 0, iconData: Icons.play_circle_outline)
+        SpinPerfect(
+          infinite: true,
+          duration: const Duration(seconds: 5),
+          child: const _CustomIconButton(value: 0, iconData: Icons.play_circle_outline)
+        )
 
       ],
     );
