@@ -14,7 +14,10 @@ class VideoBackground extends StatelessWidget {
             colors: [
               Colors.transparent,
               Colors.black87
-              ]
+              ],
+              stops: [0.8, 1.0],
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter
           )
       ),)
     );
