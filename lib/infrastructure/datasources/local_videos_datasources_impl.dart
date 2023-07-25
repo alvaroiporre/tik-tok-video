@@ -3,7 +3,7 @@ import 'package:tik_tok_video/domain/entities/video_post.dart';
 import 'package:tik_tok_video/infrastructure/models/local_video_model.dart';
 import 'package:tik_tok_video/shared/data/local_video_posts.dart';
 
-class LocalVideoDatasource implements VideoPostDatasource {
+class LocalVideoDatasourceImpl implements VideoPostDatasource {
   @override
   Future<List<VideoPost>> getFavoriteVideosByUser(String userID) {
     throw UnimplementedError();

@@ -4,10 +4,10 @@ import 'package:tik_tok_video/domain/datasources/video_posts_datasource.dart';
 import 'package:tik_tok_video/domain/entities/video_post.dart';
 import 'package:tik_tok_video/domain/repositories/video_posts_repository.dart';
 
-class VideoPostsRepository implements VideoPostRepository {
+class VideoPostsRepositoryImpl implements VideoPostRepository {
   final VideoPostDatasource videosDatasource;
 
-  VideoPostsRepository({
+  VideoPostsRepositoryImpl({
     required this.videosDatasource
   });
   
@@ -20,5 +20,5 @@ class VideoPostsRepository implements VideoPostRepository {
   Future<List<VideoPost>> getTrendingVideosByPage(int page) {
     return videosDatasource.getTrendingVideosByPage(page);
   }
-  
+
 }
